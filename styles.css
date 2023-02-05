@@ -1,0 +1,131 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #c3c3c3; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width:100vw;
+    height: auto;
+    min-height: 100vh;
+}
+
+#main>#propositions {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    max-width: 15vw;
+    max-height: 15vh;
+    overflow-y: auto;
+    background-color: rgb(86, 86, 86);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+}
+
+#main>#propositions>button {
+    position: relative;
+    height: 25px;
+    max-height: 30px;
+    width: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: monospace;
+    outline: solid 1px rgb(44, 44, 44);
+    color: rgb(31, 31, 31);
+    text-align: center;
+    line-height: 2px;
+    background-color: transparent;
+    transition: ease-in-out 100ms;
+}
+
+#main>#propositions>button:hover {
+    cursor: pointer;
+    color: rgb(61, 61, 61);
+}
+
+#main>#propositions>div:hover {
+    cursor: pointer;
+    color:rgba(54, 54, 54, 0.931)
+}
+
+#main>grid {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 10vw 60vw 20vw;
+    background-color: rgb(51, 51, 51);
+}
+
+grid>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    outline: solid black 1px;
+}
+
+grid>div>* {
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    border: none;
+    outline: solid black 1px;
+    min-height: 25px;
+    max-height: 25px;
+    padding: 0px;
+    margin: 0;
+    color: white;
+    background-color: transparent;
+}
+
+grid>div>*::placeholder {
+    color: rgb(107, 107, 107);
+    outline: solid black 1px;
+    background-color: rgb(51, 51, 51);
+    margin: 0;
+    padding: 0;
+}
+
+grid>div>div {
+    transition: ease-in-out 200ms;
+    user-select: none;
+}
+
+grid>#line>div:hover {
+    color: red;
+    cursor: pointer;
+}
+
+grid>#structure>*:hover {
+    cursor: pointer;
+    color: gray;
+    font-size: 22px;
+}
+
+grid>#values>input {
+    text-align: left;
+    text-indent: 5px;
+}
